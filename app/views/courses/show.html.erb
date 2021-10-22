@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <p>
   <strong>Title:</strong>
   <%= @course.title %>
@@ -8,6 +6,15 @@
 <p>
   <strong>Description:</strong>
   <%= @course.description %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @course.level %>
+</p>
+<p>
+  <strong>Price:</strong>
+  <%= number_to_currency(@course.price) %>
 </p>
 
 <%= link_to 'Edit', edit_course_path(@course) %> |

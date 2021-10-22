@@ -1,5 +1,5 @@
 class Course < ApplicationRecord
-  validates :title, presence: true
+  validates :title, :short_description, :price, :level, presence: true
   validates :description, presence: true
   has_rich_text :description
 

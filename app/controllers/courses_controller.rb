@@ -3,7 +3,11 @@ class CoursesController < ApplicationController
 
   # GET /courses or /courses.json
   def index
-    @courses = Course.all
+    if params[:title]
+      @courses = Course.where("title ILIKE ?", "%#{params[:title]}%")
+    else
+      @courses = Course.all
+    end
   end
 
   # GET /courses/1 or /courses/1.json
@@ -65,6 +69,6 @@ class CoursesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def course_params
-      params.require(:course).permit(:title, :description)
+      params.require(:course).permit(:title, :description, :short_description, :level, :price)
     end
 end

@@ -13,6 +13,18 @@
           <%= link_to "Courses", courses_path, class: "nav-link" %>
         </li>
       </ul>
+      <div class="form-inline my-2 my-lg-0">
+        <%= form_tag(courses_path, method: :get) do %>
+          <div class="input-group">
+            <%= text_field_tag :title, params[:title], autocomplete: "off", placeholder: "Search", class: "form-control" %>
+            <span class="input-group-append">
+              <button class="btn btn-primary btn-md" type="submit">
+                <span aria-hidden="true" class="fa fa-search"></span>
+              </button>
+            </span>
+          </div>
+        <% end %>
+      </div>
       <ul class="navbar-nav mb-2 mb-lg-0">
         <% if current_user %>
           <li class="d-flex nav-item dropdown">

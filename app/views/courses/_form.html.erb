@@ -13,12 +13,27 @@
 
   <div class="field">
     <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= form.label :description %>
-    <%= form.rich_text_area :description %>
+    <%= form.rich_text_area :description, class: "form-control" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :level %>
+    <%= form.select :level, ["Beginner", "Intermediate", "Advanced", "Master"], class: "form-select form-select-lg" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.number_field :price, class: "form-control" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :short_description %>
+    <%= form.text_area :short_description, class: "form-control" %>
   </div>
 
   <div class="actions">
