@@ -33,9 +33,11 @@
         <td><%= user.last_sign_in_at %></td>
         <td><%= user.current_sign_in_ip %></td>
         <td><%= user.last_sign_in_ip %></td>
-        <td>
-          <%= link_to 'Edit Roles', edit_user_path(user) %>
-        </td>
+        <% if policy(user).edit? %>
+          <td>
+            <%= link_to 'Edit Roles', edit_user_path(user) %>
+          </td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
