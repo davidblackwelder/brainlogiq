@@ -1,24 +1,47 @@
-# README
+# Brainlogiq
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Online learning platform for chess instructors to sell courses and manage their student's progress.
+> Live demo [_here_](https://brainlogiq.herokuapp.com).
 
-Things you may want to cover:
+## Table of Contents
 
-* Ruby version
+- [General Info](#general-information)
+- [Technologies Used](#technologies-used)
+- [Project Status](#project-status)
+- [Room for Improvement](#room-for-improvement)
+- [Acknowledgements](#acknowledgements)
+- [Contact](#contact)
 
-* System dependencies
+## General Information
 
-* Configuration
+An online learning platform to help instructors create courses for students. My target users are chess instructors looking to move away from 1:1 sessions thus allowing them to take on more students or for those chess instructors that want a better way to assign homework to their existing students.
 
-* Database creation
+## Technologies Used
 
-* Database initialization
+- Ruby - version 3.0.0
+- Rails - version 6.1.4.1
+- Bootstrap - version 5.1.3
 
-* How to run the test suite
+## Project Status
 
-* Services (job queues, cache servers, search engines, etc.)
+Project is: _in progress_
 
-* Deployment instructions
+## Room for Improvement
 
-* ...
+Room for improvement:
+
+- All of the design
+
+To do:
+
+- Add tests
+- Add all of the other TODOs
+- Build out most of the features
+
+## Acknowledgements
+
+- This project was inspired by the many chess instructors I know looking to create their own courses.
+
+## Contact
+
+Created by [David Blackwelder](https://www.davidblackwelder.dev/) - feel free to contact me!
