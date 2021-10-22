@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :users, only: [:index]
+  resources :users, only: [:index, :edit, :show, :update]
   devise_for :users
   resources :courses
   root "static_pages#home"
